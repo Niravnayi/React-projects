@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #4CAF50;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <div class="flex flex-col items-center py-12">
+        <div class="text-center mb-8">
+            <h2 class="text-xl font-bold">WORK EXPERIENCE</h2>
+        </div>
+
+        <div class="relative w-full max-w-3xl timeline">
+            <!-- First Event -->
+            <div class="mb-8 flex justify-between items-center w-full">
+                <div class="order-1 w-5/12"></div>
+                <div class="order-1 w-5/12 px-4 py-4 text-right">
+                    <h3 class="mb-1 font-bold text-lg">Full Stack Developer</h3>
+                    <p class="mb-2 text-sm">The Special Character - Dec 23 - Apr 24</p>
+                    <p class="text-sm">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+                <div class="order-1 flex items-center justify-center bg-green-500 shadow-xl w-8 h-8 rounded-full">
+                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V6l-6-6H6zm6 7H8v2h4v4h2v-4h4V9h-4V5h-2v4z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Second Event -->
+            <div class="mb-8 flex justify-between items-center w-full">
+                <div class="order-1 flex items-center justify-center bg-green-500 shadow-xl w-8 h-8 rounded-full">
+                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4H4v2h16V4zm-3 4H7v2h10V8zm2 4H5v2h14v-2zm0 4H5v2h14v-2z"/>
+                    </svg>
+                </div>
+                <div class="order-1 w-5/12 px-4 py-4 text-left">
+                    <h3 class="mb-1 font-bold text-lg">Bachelor's Degree</h3>
+                    <p class="mb-2 text-sm">SVBIT - 2020 - 2024</p>
+                    <p class="text-sm">Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                </div>
+                <div class="order-1 w-5/12"></div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <h2 class="text-xl font-bold">EDUCATION</h2>
+        </div>
+    </div>
+</body>
+</html>
